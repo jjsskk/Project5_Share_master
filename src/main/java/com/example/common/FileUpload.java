@@ -21,7 +21,7 @@ public class FileUpload {
     BookDAO bookDAO;
         public BookVO uploadPhoto(HttpServletRequest request){
             String filename = "";
-            int sizeLimit = 15*1024*1024;
+            int sizeLimit = 15*1024*1024;//dd
 
             String realPath = request.getServletContext().getRealPath("/resources/upload"); // tomcat dont recognize upload folder
             File dir= new File(realPath);
